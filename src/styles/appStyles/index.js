@@ -1,17 +1,18 @@
 import { StyleSheet } from 'react-native';
+import AppColors from "../../utils/AppColors/AppColors";
 
 export const styles = StyleSheet.create({
     container: {
       flex: 1,
       padding: 16,
-      backgroundColor: '#f5f5f5',
+      backgroundColor: AppColors.white,
     },
     item: {
       padding: 15,
       marginBottom: 10,
-      backgroundColor: '#ffffff',
+      backgroundColor: AppColors.white,
       borderRadius: 5,
-      shadowColor: '#000',
+      shadowColor: AppColors.black,
       shadowOffset: { width: 0, height: 2 },
       shadowOpacity: 0.1,
       shadowRadius: 4,
@@ -22,7 +23,7 @@ export const styles = StyleSheet.create({
       color: '#333',
     },
     button: {
-      backgroundColor: '#007bff',
+      backgroundColor: AppColors.downyBackground,
       paddingVertical: 12,
       paddingHorizontal: 20,
       borderRadius: 5,
@@ -30,7 +31,7 @@ export const styles = StyleSheet.create({
       alignItems: 'center',
     },
     buttonText: {
-      color: '#ffffff',
+      color: AppColors.white,
       fontSize: 16,
       fontWeight: 'bold',
     },

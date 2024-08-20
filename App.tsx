@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import AppNavigator from './src/services/navigation/AppNavigator';
-import NavigationService from './src/services/navigation/NavigationService';
+import AppNavigator from './src/navigation/AppNavigator';
+import NavigationService from './src/navigation/NavigationService';
 
 const App = () => {
   return (

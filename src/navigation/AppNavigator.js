@@ -1,0 +1,190 @@
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
+import HomeView from '../screens/appFlow/HomeScreen/HomeScreen';
+import ProfileScreen from '../screens/appFlow/ProfileScreen/ProfileScreen';
+import LanguageSelectionScreen from '../screens/appFlow/LanguageSelection/LanguageSelection';
+import Welcome from "../screens/authFlow/Welcome/Welcome";
+import SignUp from "../screens/authFlow/SignUp/SignUp";
+import ConfirmPassword from "../screens/authFlow/ConfirmPassword/ConfirmPassword";
+import Congratulation from "../screens/authFlow/Congratulation/Congratulation";
+import Login from "../screens/authFlow/Login/Login";
+import ForgetUsername from "../screens/authFlow/ForgetUsername/ForgetUsername";
+import ForgetPassword from "../screens/authFlow/ForgetPassword/ForgetPassword";
+import ChangePassword from "../screens/authFlow/ChangePassword/ChangePassword";
+import Info1 from "../screens/appFlow/InfoScreens/InfoScreen1/InfoScreen1";
+import Info2 from "../screens/appFlow/InfoScreens/InfoScreen2/InfoScreen2";
+import Info3 from "../screens/appFlow/InfoScreens/InfoScreen3/InfoScreen3";
+import Info4 from "../screens/appFlow/InfoScreens/InfoScreen4/InfoScreen4";
+import Info5 from "../screens/appFlow/InfoScreens/InfoScreen5/InfoScreen5";
+import BottomTabNavigator from "./BottomTabNavigator/BottomTabNavigator";
+import CalendarScreen from "../screens/appFlow/CalenderScreen/CalenderScreen";
+import TreatmentScreen from "../screens/appFlow/TreatmentScreen/TreatmentScreen";
+import UpdatePassword from "../screens/appFlow/UpdatePassword/UpdatePassword";
+import YourInformation from "../screens/appFlow/YourInformation/YourInformation";
+import IVFCalculator from "../screens/appFlow/IVFCalculator/IVFCalculator";
+import IVFCycle1 from "../screens/appFlow/IVFCycle1/IVFCycle1";
+import IVFCycle1Questionare from "../screens/appFlow/IVFCycle1Questionare/IVFCycle1Questionare";
+import IVFCycle2 from "../screens/appFlow/IVFCycle2/IVFCycle2";
+import IVFCycle2Questionare from "../screens/appFlow/IVFCycle2Questionare/IVFCycle2Questionare";
+import IVFCycle3 from "../screens/appFlow/IVFCycle3/IVFCycle3";
+import IVFCycle3Questionare from "../screens/appFlow/IVFCycle3Questionare/IVFCycle3Questionare";
+import CalculateResult from "../screens/appFlow/CalculateResult/CalculateResult";
+import HelpAndSupport from "../screens/appFlow/HelpAndSupport/HelpAndSupport";
+import ProfileInfo from "../screens/appFlow/ProfileInfo/ProfileInfo";
+import ProfileDetail from "../screens/appFlow/ProfileDetail/ProfileDetail";
+import HealthProfile from "../screens/appFlow/HealthProfile/HealthProfile";
+import HormonalPanel from "../screens/appFlow/HormonalPanel/HormonalPanel";
+import MyCycle from "../screens/appFlow/MyCycle/MyCycle";
+import PreviousCycle from "../screens/appFlow/PreviousCycle/PreviousCycle";
+import EmbyroEgg from "../screens/appFlow/EmbyroEgg/EmbyroEgg";
+import EmbyroReport from "../screens/appFlow/EmbyroReport/EmbyroReport";
+import MyCycleStartDate from "../screens/appFlow/MyCycleStartDate/MyCycleStartDate";
+import CourseTreatmentType from "../screens/appFlow/CourseTreatmentType/CourseTreatmentType";
+import ProtocolType from "../screens/appFlow/ProtocolType/ProtocolType";
+import MyPreviousCycles from "../screens/appFlow/MyPreviousCycles/MyPreviousCycles";
+import PreviousCycleStartDate from "../screens/appFlow/PreviousCycleStartDate/PreviousCycleStartDate";
+import PreviousCycleEndDate from "../screens/appFlow/PreviousCycleEndDate/PreviousCycleEndDate";
+import AddNewCycle from "../screens/appFlow/AddNewCycle/AddNewCycle";
+import MedicationReminder from "../screens/appFlow/MedicationReminder/MedicationReminder";
+import PregnancyTestScan from "../screens/appFlow/PregnancyTestScan/PregnancyTestScan";
+import PregnancyCheck from "../screens/appFlow/PregnancyCheck/PregnancyCheck";
+import CongratulationTest from "../screens/appFlow/CongratulationTest/CongratulationTest";
+import TryAgain from "../screens/appFlow/TryAgain/TryAgain";
+import TestsScreen from "../screens/appFlow/TestsScreen/TestsScreen";
+import EnergizingScreen from "../screens/appFlow/EnergizingScreen/EnergizingScreen";
+import RecoveryScreen from "../screens/appFlow/RecoveryScreen/RecoveryScreen";
+import TransformationScreen from "../screens/appFlow/TransformationScreen/TransformationScreen";
+import WaitForWeeksScreen from "../screens/appFlow/WaitForWeeksScreen/WaitForWeeksScreen";
+import DrugStimulationScreen from "../screens/appFlow/DrugStimulationScreen/DrugStimulationScreen";
+import EggRetrivalScreen from "../screens/appFlow/EggRetrivalScreen/EggRetrivalScreen";
+import EmbyroTransferScreen from "../screens/appFlow/EmbyroTransferScreen/EmbyroTransferScreen";
+import BeEmpoweredScreen from "../screens/appFlow/BeEmpoweredScreen/BeEmpoweredScreen";
+import Pharmaceutical from "../screens/appFlow/Pharmaceutical/Pharmaceutical";
+import ListOfMedicines from "../screens/appFlow/ListOfMedicines/ListOfMedicines";
+import MedicationDose from "../screens/appFlow/MedicationDose/MedicationDose";
+import Medications from "../screens/appFlow/Medications/Medications";
+import ScanLabReport from "../screens/appFlow/ScanLabReport/ScanLabReport";
+import LabReportResult from "../screens/appFlow/LabReportResult/LabReportResult";
+import ScanUltrasound from "../screens/appFlow/ScanUltrasound/ScanUltrasound";
+import ScanUltrasoundManually from "../screens/appFlow/ScanUltrasoundManually/ScanUltrasoundManually";
+import UltrasoundResult from "../screens/appFlow/UltrasoundResult/UltrasoundResult";
+import UltrasoundReport from "../screens/appFlow/UltrasoundReport/UltrasoundReport";
+import ScanSpouseReport from "../screens/appFlow/ScanSpouseReport/ScanSpouseReport";
+import SpouseReports from "../screens/appFlow/SpouseReports/SpouseReports";
+import InformationScreen from "../screens/appFlow/InformationScreen/InformationScreen";
+import StartPeriodScreen from "../screens/appFlow/StartPeriodScreen/StartPeriodScreen";
+import StimulationScreen from "../screens/appFlow/StimulationScreen/StimulationScreen";
+import TriggeringScreen from "../screens/appFlow/TriggeringScreen/TriggeringScreen";
+import RetrivalScreen from "../screens/appFlow/RetrivalScreen/RetrivalScreen";
+import EmbyroTransfer from "../screens/appFlow/EmbyroTransfer/EmbyroTransfer";
+import PregnancyTestScreen from "../screens/appFlow/PregnancyTestScreen/PregnancyTestScreen";
+import AppointmentsScreen from "../screens/appFlow/AppointmentsScreen/AppointmentsScreen";
+import AddNoteScreen from "../screens/appFlow/AddNoteScreen/AddNoteScreen";
+import SymptomsScreen from "../screens/appFlow/SymptomsScreen/SymptomsScreen";
+import IntimacyScreen from "../screens/appFlow/IntimacyScreen/IntimacyScreen";
+import MoodScreen from "../screens/appFlow/MoodScreen/MoodScreen";
+import WeightScreen from "../screens/appFlow/WeightScreen/WeightScreen";
+import PhysicalSymptomScreen from "../screens/appFlow/PhysicalSymptomScreen/PhysicalSymptomScreen";
+import BaselBodyTempScreen from "../screens/appFlow/BaselBodyTempScreen/BaselBodyTempScreen";
+import CervicalMuscus from "../screens/appFlow/CervicalMuscus/CervicalMuscus";
+import SplashScreen from "../screens/appFlow/SplashScreen/SplashScreen";
+import ScreenNames from './ScreenNames';
+
+const Stack = createStackNavigator();
+
+const AppNavigator = () => {
+  return (
+      <Stack.Navigator initialRouteName={ScreenNames.Splash}>
+        <Stack.Screen name={ScreenNames.Splash} component={SplashScreen} />
+        <Stack.Screen name={ScreenNames.LanguageSelection} component={LanguageSelectionScreen} />
+        <Stack.Screen name={ScreenNames.Welcome} component={Welcome} />
+        <Stack.Screen name={ScreenNames.SignUp} component={SignUp} />
+        <Stack.Screen name={ScreenNames.ConfirmPassword} component={ConfirmPassword} />
+        <Stack.Screen name={ScreenNames.Congratulation} component={Congratulation} />
+        <Stack.Screen name={ScreenNames.ForgetUsername} component={ForgetUsername} />
+        <Stack.Screen name={ScreenNames.ForgetPassword} component={ForgetPassword} />
+        <Stack.Screen name={ScreenNames.ChangePassword} component={ChangePassword} />
+        <Stack.Screen name={ScreenNames.Info1} component={Info1} />
+        <Stack.Screen name={ScreenNames.Info2} component={Info2} />
+        <Stack.Screen name={ScreenNames.Info3} component={Info3} />
+        <Stack.Screen name={ScreenNames.Info4} component={Info4} />
+        <Stack.Screen name={ScreenNames.Info5} component={Info5} />
+        <Stack.Screen name={ScreenNames.Login} component={Login} />
+        <Stack.Screen name={ScreenNames.Home} component={HomeView} />
+        <Stack.Screen name={ScreenNames.Profile} component={ProfileScreen} />
+        <Stack.Screen name={ScreenNames.Calender} component={CalendarScreen} />
+        <Stack.Screen name={ScreenNames.Treatment} component={TreatmentScreen} />
+        <Stack.Screen name={ScreenNames.UpdatePassword} component={UpdatePassword} />
+        <Stack.Screen name={ScreenNames.YourInformation} component={YourInformation} />
+        <Stack.Screen name={ScreenNames.IVFCalculator} component={IVFCalculator} />
+        <Stack.Screen name={ScreenNames.IVFCycle1} component={IVFCycle1} />
+        <Stack.Screen name={ScreenNames.IVFCycle1Questionare} component={IVFCycle1Questionare} />
+        <Stack.Screen name={ScreenNames.IVFCycle2} component={IVFCycle2} />
+        <Stack.Screen name={ScreenNames.IVFCycle2Questionare} component={IVFCycle2Questionare} />
+        <Stack.Screen name={ScreenNames.IVFCycle3} component={IVFCycle3} />
+        <Stack.Screen name={ScreenNames.IVFCycle3Questionare} component={IVFCycle3Questionare} />
+        <Stack.Screen name={ScreenNames.CalculateResult} component={CalculateResult} />
+        <Stack.Screen name={ScreenNames.HelpAndSupport} component={HelpAndSupport} />
+        <Stack.Screen name={ScreenNames.ProfileInfo} component={ProfileInfo} />
+        <Stack.Screen name={ScreenNames.ProfileDetail} component={ProfileDetail} />
+        <Stack.Screen name={ScreenNames.HealthProfile} component={HealthProfile} />
+        <Stack.Screen name={ScreenNames.HormonalPanel} component={HormonalPanel} />
+        <Stack.Screen name={ScreenNames.MyCycle} component={MyCycle} />
+        <Stack.Screen name={ScreenNames.PreviousCycle} component={PreviousCycle} />
+        <Stack.Screen name={ScreenNames.EmbyroEgg} component={EmbyroEgg} />
+        <Stack.Screen name={ScreenNames.EmbyroReport} component={EmbyroReport} />
+        <Stack.Screen name={ScreenNames.CourseStartDate} component={MyCycleStartDate} />
+        <Stack.Screen name={ScreenNames.CourseTreatmentType} component={CourseTreatmentType} />
+        <Stack.Screen name={ScreenNames.ProtocolType} component={ProtocolType} />
+        <Stack.Screen name={ScreenNames.MyPreviousCycles} component={MyPreviousCycles} />
+        <Stack.Screen name={ScreenNames.PreviousCycleStartDate} component={PreviousCycleStartDate} />
+        <Stack.Screen name={ScreenNames.PreviousCycleEndDate} component={PreviousCycleEndDate} />
+        <Stack.Screen name={ScreenNames.AddNewCycle} component={AddNewCycle} />
+        <Stack.Screen name={ScreenNames.MedicationReminder} component={MedicationReminder} />
+        <Stack.Screen name={ScreenNames.PregnancyTestScan} component={PregnancyTestScan} />
+        <Stack.Screen name={ScreenNames.PregnancyCheck} component={PregnancyCheck} />
+        <Stack.Screen name={ScreenNames.CongratulationTest} component={CongratulationTest} />
+        <Stack.Screen name={ScreenNames.TryAgain} component={TryAgain} />
+        <Stack.Screen name={ScreenNames.TestsScreen} component={TestsScreen} />
+        <Stack.Screen name={ScreenNames.EnergizingScreen} component={EnergizingScreen} />
+        <Stack.Screen name={ScreenNames.RecoveryScreen} component={RecoveryScreen} />
+        <Stack.Screen name={ScreenNames.TransformationScreen} component={TransformationScreen} />
+        <Stack.Screen name={ScreenNames.WaitForWeeksScreen} component={WaitForWeeksScreen} />
+        <Stack.Screen name={ScreenNames.DrugStimulationScreen} component={DrugStimulationScreen} />
+        <Stack.Screen name={ScreenNames.EggRetrivalScreen} component={EggRetrivalScreen} />
+        <Stack.Screen name={ScreenNames.EmbyroTransferScreen} component={EmbyroTransferScreen} />
+        <Stack.Screen name={ScreenNames.BeEmpoweredScreen} component={BeEmpoweredScreen} />
+        <Stack.Screen name={ScreenNames.Pharmaceutical} component={Pharmaceutical} />
+        <Stack.Screen name={ScreenNames.ListOfMedicines} component={ListOfMedicines} />
+        <Stack.Screen name={ScreenNames.MedicationDose} component={MedicationDose} />
+        <Stack.Screen name={ScreenNames.Medications} component={Medications} />
+        <Stack.Screen name={ScreenNames.ScanLabReport} component={ScanLabReport} />
+        <Stack.Screen name={ScreenNames.LabReportResult} component={LabReportResult} />
+        <Stack.Screen name={ScreenNames.ScanUltrasound} component={ScanUltrasound} />
+        <Stack.Screen name={ScreenNames.ScanUltrasoundManually} component={ScanUltrasoundManually} />
+        <Stack.Screen name={ScreenNames.UltrasoundResult} component={UltrasoundResult} />
+        <Stack.Screen name={ScreenNames.UltrasoundReport} component={UltrasoundReport} />
+        <Stack.Screen name={ScreenNames.ScanSpouseReport} component={ScanSpouseReport} />
+        <Stack.Screen name={ScreenNames.SpouseReports} component={SpouseReports} />
+        <Stack.Screen name={ScreenNames.InformationScreen} component={InformationScreen} />
+        <Stack.Screen name={ScreenNames.StartPeriodScreen} component={StartPeriodScreen} />
+        <Stack.Screen name={ScreenNames.StimulationScreen} component={StimulationScreen} />
+        <Stack.Screen name={ScreenNames.TriggeringScreen} component={TriggeringScreen} />
+        <Stack.Screen name={ScreenNames.RetrivalScreen} component={RetrivalScreen} />
+        <Stack.Screen name={ScreenNames.EmbyroTransfer} component={EmbyroTransfer} />
+        <Stack.Screen name={ScreenNames.PregnancyTestScreen} component={PregnancyTestScreen} />
+        <Stack.Screen name={ScreenNames.AppointmentsScreen} component={AppointmentsScreen} />
+        <Stack.Screen name={ScreenNames.AddNoteScreen} component={AddNoteScreen} />
+        <Stack.Screen name={ScreenNames.SymptomsScreen} component={SymptomsScreen} />
+        <Stack.Screen name={ScreenNames.IntimacyScreen} component={IntimacyScreen} />
+        <Stack.Screen name={ScreenNames.MoodScreen} component={MoodScreen} />
+        <Stack.Screen name={ScreenNames.WeightScreen} component={WeightScreen} />
+        <Stack.Screen name={ScreenNames.PhysicalSymptomScreen} component={PhysicalSymptomScreen} />
+        <Stack.Screen name={ScreenNames.BaselBodyTempScreen} component={BaselBodyTempScreen} />
+        <Stack.Screen name={ScreenNames.CervicalMuscus} component={CervicalMuscus} />
+        <Stack.Screen name={ScreenNames.BottomTabNavigator} component={BottomTabNavigator} />
+      </Stack.Navigator>
+  );
+};
+
+export default AppNavigator;

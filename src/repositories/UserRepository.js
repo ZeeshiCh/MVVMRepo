@@ -1,6 +1,6 @@
 import NetworkManager from '../network/NetworkManager';
 import UserModel from '../models/UserModel';
-import CONFIG from '../services/utils/config'; 
+import CONFIG from '../utils/Config/config';
 
 class UserRepository {
   constructor() {

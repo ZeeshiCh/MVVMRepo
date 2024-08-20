@@ -1,6 +1,6 @@
 import NetworkManager from '../network/NetworkManager';
 import ProductModel from '../models/ProductModel';
-import CONFIG from '../services/utils/config'; 
+import CONFIG from '../utils/Config/config';
 
 class ProductRepository {
   constructor() {
