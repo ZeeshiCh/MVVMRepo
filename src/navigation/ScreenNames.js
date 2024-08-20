@@ -1,35 +1,3 @@
-import EmbyroTransferScreen from "../screens/appFlow/EmbyroTransferScreen/EmbyroTransferScreen";
-import BeEmpoweredScreen from "../screens/appFlow/BeEmpoweredScreen/BeEmpoweredScreen";
-import Pharmaceutical from "../screens/appFlow/Pharmaceutical/Pharmaceutical";
-import ListOfMedicines from "../screens/appFlow/ListOfMedicines/ListOfMedicines";
-import MedicationDose from "../screens/appFlow/MedicationDose/MedicationDose";
-import Medications from "../screens/appFlow/Medications/Medications";
-import ScanLabReport from "../screens/appFlow/ScanLabReport/ScanLabReport";
-import LabReportResult from "../screens/appFlow/LabReportResult/LabReportResult";
-import ScanUltrasound from "../screens/appFlow/ScanUltrasound/ScanUltrasound";
-import ScanUltrasoundManually from "../screens/appFlow/ScanUltrasoundManually/ScanUltrasoundManually";
-import UltrasoundResult from "../screens/appFlow/UltrasoundResult/UltrasoundResult";
-import UltrasoundReport from "../screens/appFlow/UltrasoundReport/UltrasoundReport";
-import ScanSpouseReport from "../screens/appFlow/ScanSpouseReport/ScanSpouseReport";
-import SpouseReports from "../screens/appFlow/SpouseReports/SpouseReports";
-import InformationScreen from "../screens/appFlow/InformationScreen/InformationScreen";
-import StartPeriodScreen from "../screens/appFlow/StartPeriodScreen/StartPeriodScreen";
-import StimulationScreen from "../screens/appFlow/StimulationScreen/StimulationScreen";
-import TriggeringScreen from "../screens/appFlow/TriggeringScreen/TriggeringScreen";
-import RetrivalScreen from "../screens/appFlow/RetrivalScreen/RetrivalScreen";
-import EmbyroTransfer from "../screens/appFlow/EmbyroTransfer/EmbyroTransfer";
-import PregnancyTestScreen from "../screens/appFlow/PregnancyTestScreen/PregnancyTestScreen";
-import AppointmentsScreen from "../screens/appFlow/AppointmentsScreen/AppointmentsScreen";
-import AddNoteScreen from "../screens/appFlow/AddNoteScreen/AddNoteScreen";
-import SymptomsScreen from "../screens/appFlow/SymptomsScreen/SymptomsScreen";
-import intimacyScreen from "../screens/appFlow/IntimacyScreen/IntimacyScreen";
-import IntimacyScreen from "../screens/appFlow/IntimacyScreen/IntimacyScreen";
-import MoodScreen from "../screens/appFlow/MoodScreen/MoodScreen";
-import WeightScreen from "../screens/appFlow/WeightScreen/WeightScreen";
-import PhysicalSymptomScreen from "../screens/appFlow/PhysicalSymptomScreen/PhysicalSymptomScreen";
-import BaselBodyTempScreen from "../screens/appFlow/BaselBodyTempScreen/BaselBodyTempScreen";
-import CervicalMuscus from "../screens/appFlow/CervicalMuscus/CervicalMuscus";
-
 const ScreenNames = {
     Splash: 'Splash',
     LanguageSelection: 'LanguageSelection',
