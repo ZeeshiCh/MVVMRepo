@@ -7,7 +7,7 @@ import ScreenNames from "../../../navigation/ScreenNames";
 import NavigationService from "../../../navigation/NavigationService";
 
 import intimacyIcon from '../../../assets/images/symptom1.png';
-import moodIcon from '/../../../assets/images/symptom2.png';
+import moodIcon from '../../../assets/images/symptom2.png';
 import weightIcon from '../../../assets/images/symptom3.png';
 import physicalSymptomsIcon from '../../../assets/images/symptom4.png';
 import bbtIcon from '../../../assets/images/symptom5.png';

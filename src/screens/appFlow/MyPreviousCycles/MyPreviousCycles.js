@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, Text, Dimensions, TouchableOpacity, Image } from 'react-native';
-import Header from '../../../components/Header/header';
+import Header from "../../../components/Header/Header";
 import AppColors from "../../../utils/AppColors/AppColors";
-import Button from '../../../components/Button/button';
+import Button from "../../../components/Button/Button";
 import { useNavigation } from '@react-navigation/native';
 import ScreenNames from "../../../navigation/ScreenNames";
 import NavigationService from "../../../navigation/NavigationService";
