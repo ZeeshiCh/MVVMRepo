@@ -182,7 +182,7 @@ const AppNavigator = () => {
         <Stack.Screen name={ScreenNames.PhysicalSymptomScreen} component={PhysicalSymptomScreen} />
         <Stack.Screen name={ScreenNames.BaselBodyTempScreen} component={BaselBodyTempScreen} />
         <Stack.Screen name={ScreenNames.CervicalMuscus} component={CervicalMuscus} />
-        <Stack.Screen name={ScreenNames.BottomTabNavigator} component={BottomTabNavigator} />
+        {/*<Stack.Screen name={ScreenNames.BottomTabNavigator} component={BottomTabNavigator} />*/}
       </Stack.Navigator>
   );
 };

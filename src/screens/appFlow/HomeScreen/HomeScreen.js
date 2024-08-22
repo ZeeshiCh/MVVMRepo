@@ -4,6 +4,8 @@ import { Ionicons } from '@expo/vector-icons';
 import AppColors from "../../../utils/AppColors/AppColors";
 import InfoContainer from "../../../components/InfoContainer/InfoContainer";
 import Slider from '@react-native-community/slider';
+import { useNavigation } from '@react-navigation/native';
+
 import ScreenNames from "../../../navigation/ScreenNames";
 import NavigationService from "../../../navigation/NavigationService";
 
@@ -20,7 +22,6 @@ import Image4 from '../../../assets/images/home8.png';
 import Image5 from '../../../assets/images/home5.png';
 import Image6 from '../../../assets/images/home6.png';
 import Image7 from '../../../assets/images/home7.png';
-import { useNavigation } from '@react-navigation/native';
 
 const cards = [
     { title: 'They read “Adsala Jalaa”.', subtitle: 'Rasṭḥam lākṣb, Jatnamla Saw, Jatnamla Saw', image: Image1 },
@@ -96,15 +97,27 @@ export default function HomeScreen() {
             {/*        <Ionicons name="menu" size={32} color="white" />*/}
             {/*    </TouchableOpacity>*/}
             {/*</View>*/}
+            {/*<View style={styles.header}>*/}
+            {/*    <View style={styles.profileIcon}>*/}
+            {/*        <Ionicons name="person-circle" size={42} color="white" />*/}
+            {/*    </View>*/}
+            {/*    <Text style={styles.headerText}>Home page</Text>*/}
+            {/*    <TouchableOpacity style={styles.menuIcon} onPress={() => NavigationService.navigate(ScreenNames.HelpAndSupport)}>*/}
+            {/*        <Ionicons name="menu" size={32} color="white" />*/}
+            {/*    </TouchableOpacity>*/}
+            {/*</View>*/}
+
             <View style={styles.header}>
                 <View style={styles.profileIcon}>
                     <Ionicons name="person-circle" size={42} color="white" />
                 </View>
                 <Text style={styles.headerText}>Home page</Text>
-                <TouchableOpacity style={styles.menuIcon} onPress={() => NavigationService.navigate(ScreenNames.HelpAndSupport)}>
+                <TouchableOpacity style={styles.menuIcon} onPress={() => navigation.openDrawer()}>
                     <Ionicons name="menu" size={32} color="white" />
                 </TouchableOpacity>
             </View>
+
+
             <View style={styles.welcomeContainer}>
                 <Text style={styles.welcomeText}>Welcome aboard user</Text>
             </View>

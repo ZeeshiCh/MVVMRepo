@@ -1,12 +1,14 @@
 import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const Header = ({ headerText }) => {
+    const navigation = useNavigation()
     return (
         <View style={styles.header}>
             <View style={styles.profileIcon}></View>
             <Text style={styles.headerText}>{headerText}</Text>
-            <TouchableOpacity style={styles.menuIcon}>
+            <TouchableOpacity style={styles.menuIcon} onPress={() => navigation.openDrawer()}>
                 <Text style={styles.menuText}>≡</Text>
             </TouchableOpacity>
         </View>

@@ -1,13 +1,19 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './src/navigation/AppNavigator';
+import RootNavigator from "./src/navigation/RootNavigation/RootNavigation";
 import NavigationService from './src/navigation/NavigationService';
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { SafeAreaView } from "react-native";
 
 const App = () => {
   return (
-    <NavigationContainer ref={(navigatorRef) => NavigationService.setTopLevelNavigator(navigatorRef)}>
-      <AppNavigator />
-    </NavigationContainer>
+      <GestureHandlerRootView style={{ flex: 1 }}>
+
+                {/*<AppNavigator />*/}
+                <RootNavigator/>
+
+      </GestureHandlerRootView>
   );
 };
 
